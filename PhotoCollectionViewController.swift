@@ -79,7 +79,7 @@ extension PhotoCollectionViewController : UITextFieldDelegate {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoBrowserCellCollectionViewCell
         //2
         let flickrPhoto = photoForIndexPath(indexPath)
-        cell.backgroundColor = UIColor.blackColor()
+        cell.backgroundColor = UIColor.orangeColor()
         //3
         cell.imageView.image = flickrPhoto.thumbnail
         
