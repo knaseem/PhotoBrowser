@@ -11,6 +11,7 @@
 		E9FAC9BB1D3931EC00B86527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FAC9B91D3931EC00B86527 /* Main.storyboard */; };
 		E9FAC9BD1D3931EC00B86527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FAC9BC1D3931EC00B86527 /* Assets.xcassets */; };
 		E9FAC9C01D3931EC00B86527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FAC9BE1D3931EC00B86527 /* LaunchScreen.storyboard */; };
+		E9FAC9C81D3939E700B86527 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FAC9C71D3939E700B86527 /* PhotoCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E9FAC9BC1D3931EC00B86527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9FAC9BF1D3931EC00B86527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9FAC9C11D3931EC00B86527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9FAC9C71D3939E700B86527 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCollectionViewController.swift; path = ../PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FAC9B51D3931EC00B86527 /* AppDelegate.swift */,
+				E9FAC9C71D3939E700B86527 /* PhotoCollectionViewController.swift */,
 				E9FAC9B91D3931EC00B86527 /* Main.storyboard */,
 				E9FAC9BC1D3931EC00B86527 /* Assets.xcassets */,
 				E9FAC9BE1D3931EC00B86527 /* LaunchScreen.storyboard */,
@@ -133,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9FAC9B61D3931EC00B86527 /* AppDelegate.swift in Sources */,
+				E9FAC9C81D3939E700B86527 /* PhotoCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 				E9FAC9C61D3931EC00B86527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
