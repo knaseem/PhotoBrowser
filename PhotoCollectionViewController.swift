@@ -75,12 +75,16 @@ extension PhotoCollectionViewController : UITextFieldDelegate {
     
     //3
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) 
+        //1
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoBrowserCellCollectionViewCell
+        //2
+        let flickrPhoto = photoForIndexPath(indexPath)
         cell.backgroundColor = UIColor.blackColor()
-        // Configure the cell
+        //3
+        cell.imageView.image = flickrPhoto.thumbnail
+        
         return cell
     }
-    
     //MARK://  CollectionView conforms to pre-built FlowLayout delegate protocol:
     //1
     func collectionView(collectionView: UICollectionView,

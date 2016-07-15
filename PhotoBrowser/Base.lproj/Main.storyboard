@@ -14,21 +14,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gc2-cA-E3Y">
-                            <size key="itemSize" width="200" height="200"/>
+                            <size key="itemSize" width="150" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="mPC-3k-glC">
-                                <rect key="frame" x="60" y="64" width="200" height="200"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="mPC-3k-glC" customClass="PhotoBrowserCellCollectionViewCell" customModule="PhotoBrowser" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p5R-qF-djd">
-                                            <rect key="frame" x="5" y="5" width="190" height="190"/>
+                                            <rect key="frame" x="5" y="5" width="140" height="140"/>
                                             <color key="backgroundColor" red="0.079418243779999995" green="1" blue="0.85628977159999997" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
                                     </subviews>
@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="bottom" secondItem="p5R-qF-djd" secondAttribute="bottom" constant="5" id="NqN-2O-zSS"/>
                                     <constraint firstItem="p5R-qF-djd" firstAttribute="leading" secondItem="mPC-3k-glC" secondAttribute="leading" constant="5" id="v0W-7n-VZp"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="p5R-qF-djd" id="6gX-fq-n54"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
